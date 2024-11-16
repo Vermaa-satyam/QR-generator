@@ -1,5 +1,8 @@
 :root{
-    --bcg-color: #001122
+    --bcg-color: #001122;
+    --primary-color : #155e75;
+    --secondry-color : #ffff;
+    --border-color : #7fb7c9;
 }
 *{
     margin: 0;
@@ -14,4 +17,52 @@ body{
     justify-content: center;
     align-content: center;
     background-color: var(--bcg-color);
+}
+.box {
+    background-color: var(--primary-color);
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+.qr_header h1{
+    font-size: 26px;
+    text-align: center;
+    color: var(--secondry-color);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.qr_header input{
+    width: 100%;
+    margin-block: 12px;
+}
+.qr_header input,select{
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px ;
+    outline: none;
+    border:  2px solid var(--border-color);
+}
+.qr_header label{
+    color: var(--secondry-color);
+    font-size: 20px;
+}
+.qr_header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qr_footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.qr_footer a {
+    font-size: 20px;
+    padding: 14px 36px;
+    margin-inline:2px ;
+    color:  var(--primary-color);
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: var(--secondry-color);
 }
