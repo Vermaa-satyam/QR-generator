@@ -9,9 +9,9 @@
 <body>
     <div class="box">
         <div class="qr_header"><h1>generate qr code</h1>
-        <input type="text" placeholder="enter your text or link">
+        <input type="text" placeholder="enter your text or link" class="qr-text">
         <div><label for="select">select sizes</label>
-            <select id="select">
+            <select class="select">
                 <option value="100">100x100</option>
                 <option value="200">200x200</option>
                 <option value="300">300x300</option>
@@ -21,10 +21,11 @@
         </div>
         <div class="qr_body"></div>
         <div class="qr_footer">
-            <a href="">generate</a>
-            <a href="">download</a>
+            <a  class="generate-btn">generate</a>
+            <a  class="download-btn" download="" >download</a>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
